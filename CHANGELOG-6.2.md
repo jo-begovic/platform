@@ -6,6 +6,27 @@ in 6.2 minor versions.
 
 To get the diff for a specific change, go to https://github.com/shopware/platform/commit/XXX where XXX is the change hash
 To get the diff between two versions, go to https://github.com/shopware/platform/compare/v6.2.0-rc4...v6.2.0
+To get the diff between two versions, go to https://github.com/shopware/platform/compare/v6.1.0...6.2
+
+
+### 6.2.1
+
+**Addition / Changes**
+
+* Administration
+    * Added property `popoverClasses` to `sw-select-result-list` and `sw-single-select`
+    * Fixed broken promotion exclusion configuration in `sw-promotion-basic-form`
+    * Fixed positioning mixin for more than 25 entries
+    * Added twig blocks to the `sw-product-detail` template for the sidebar and sidebar-items
+        * `sw_product_detail_sidebar`
+        * `sw_product_detail_sidebar_additional_items`
+    * Fixed snippet merging when plugins override existing snippets, which already exist in that specific locale 
+ 
+    * Fixed the administration multi-inheritance if a component was overriden and extended by multiple components
+
+* Core
+    * Added new `PromotionNotFoundError` and `PromotionNotEligibleError` errors to the cart if a promotion couldn't be added
+
 
 ### 6.2.0
 
